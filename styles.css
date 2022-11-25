@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #b5c2d6;
+  background: -webkit-linear-gradient(
+    91deg,
+    #b5c2d6 0%,
+    #d0a471 50%,
+    #e9d7aa 100%
+  );
+  background: linear-gradient(91deg, #b5c2d6 0%, #d0a471 50%, #e9d7aa 100%);
+  /* background image generated with 10115.io */
+}
+
+/*--------------- BANNER */
+
+.banner {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 100px;
+
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  /*background generated with 10115.io*/
+  height: 700px;
+}
+
+/*--------------- SEARCH BAR */
+
+.search {
+  width: 50%;
+  position: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.searchName {
+  width: 100%;
+  border: 2px solid #4c3f12;
+  padding: 20px 20px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  background-color: beige;
+  color: #9e8326;
+  text-align: center;
+  font-size: 26px;
+  font-style: italic;
+}
+
+.searchName:focus {
+  color: #4c3f12;
+}
+
+/*--------------- TABLE */
+
+table,
+th,
+td {
+  border: 2px solid #4c3f12;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 400px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+th,
+td {
+  padding: 20px 20px;
+}
+
+th {
+  background-color: #9e8326;
+  color: #4c3f12;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: #d5c697;
+}
+
+/*--------------- FORM */
+
+form {
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  font-size: inherit;
+  background-color: beige;
+  overflow: auto;
+}
+
+input:focus {
+  background-color: #d5c697;
+  border-color: #000;
+}
+
+/*--------------- POP UP CONTACTCARD */
+
+#contactCard {
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*--------------- BUTTONS IN GENERAL */
+
+button {
+  /* remove default behavior (learned at LogRocket, Frontend Analytics)*/
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* usual styles (learned at LogRocket, Frontend Analytics) */
+  padding: 10px;
+  border: 2px solid #4c3f12;
+  background-color: #9e8326;
+  color: #4c3f12;
+  font-size: 18px;
+  font-weight: 6;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#searchButton {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #4c3f12;
+  background-color: #9e8326;
+  color: #4c3f12;
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.buttom-buttons {
+  margin: 10px;
+  font-weight: bold;
+}
+
+
+/*--------------- FOOTER */
+
+footer {
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*--------------- POPUP */
+/* for the pop up a jquery ui was used and adapted to the websites style guide,
+--> overwriting some style choices of popup in jqueryui.css */
+
+.ui-widget-content {
+  border: 0px !important;
+  border-radius: 5px;
+  background-color: #f0e8d1 !important;
+  width: auto !important;
+  overflow: auto !important;
+  color: #4c3f12 !important;
+  font-weight: bold !important;
+  font-family: "Helvetica Neue", sans-serif !important;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  line-height: 150% !important;
+}
+
+.ui-widget-header {
+  border: 0px !important;
+  border-radius: 5px;
+  background-color: #9e8326 !important;
+  color: #4c3f12 !important;
+  font-weight: bold !important;
+  font-family: "Helvetica Neue", sans-serif !important;
+  font-size: 24px !important;
+  text-transform: uppercase !important;
+  width: 100% !important;
+}
+
+.ui-button {
+  text-transform: uppercase !important;
+  background-color: #f0e8d1 !important;
+  color: #9e8326 !important;
+  border: 2px solid #9e8326 !important;
+  border-radius: 5px;
+  font-family: "Helvetica Neue", sans-serif !important;
+  font-size: 18px !important;
+}
+
+.tableContact {
+  border: 0px !important;
+}

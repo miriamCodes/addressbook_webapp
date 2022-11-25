@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+    <!-- mobile optimated content window -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Javascript put at the end-->
+    <!-- <script src="script.js"></script> -->
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jqueryui.css" />
+
+    <title>Adress Book</title>
+  </head>
+
+  <body>
+    <div class="banner">
+      <h1>
+        Address <br />
+        Book <br />
+        of my <br />
+        Favorite <br />
+        Philosophers
+      </h1>
+      <h6>I know that I don't know, but I can look up who I want to know.</h6>
+    </div>
+
+    <main>
+      <div class="search">
+        <input
+          type="text"
+          id="searchTerm"
+          class="searchName"
+          placeholder="WHO ARE YOU LOOKING FOR?"
+        />
+      </div>
+      <!-- parts of search bar inspired by simple search bar by codepen.io-->
+
+      <!-- HTML base for table, which will be filled in through a javascript function that creates test data-->
+      <div class="table" id="table">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- HTML base for the pop up window of a form to add a new person into the data base-->
+      <button
+        type="button"
+        name="newPhil"
+        value="send"
+        onclick="openPhilForm()"
+        class="buttom-buttons"
+      >
+        ADD NEW PERSON
+      </button>
+
+      <!-- button to trigger the javascript function that prints a dataset into the table-->
+      <button
+        type="button"
+        name="button"
+        onclick="createTestData()"
+        class="buttom-buttons"
+      >
+        CREATE TEST DATA
+      </button>
+
+      <!--pop up to show contact details-->
+      <div id="contactCard" title="Details">
+        <p></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>-- made as a coding challenge by Miriam</p>
+    </footer>
+
+    <form class="form" id="form">
+      <p>
+        <label
+          >Name: <input name="name" id="name" type="text" required
+        /></label>
+      </p>
+      <p>
+        <label
+          >Surname: <input name="surname" id="surname" type="text" required
+        /></label>
+      </p>
+      <p>
+        <label
+          >City: <input name="city" id="city" type="text" required
+        /></label>
+      </p>
+      <p>
+        <label
+          >Country: <input name="country" id="country" type="text" required
+        /></label>
+      </p>
+      <p>
+        <label
+          >Phone Number:
+          <input
+            name="number"
+            id="phoneNumber"
+            type="number"
+            required
+            pattern="[0-9]"
+        /></label>
+      </p>
+      <p></p>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
